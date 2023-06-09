@@ -8,6 +8,7 @@ Scapy is a Python library that enables us to send, sniff, and dissect network fr
 a function that will send packets in a loop until the attacker stop it. This will makes the server unaware of the attack and responds to 
 each attempt with a SYN-ACK packet from each port. In this way, the server will quickly be unresponsive to legitimate clients. Other than
 that, we also use Hping3 tools to perform the DOS attack.
+References : https://www.freecodecamp.org/news/how-to-use-scapy-python-networking/#:~:text=Scapy%20is%20a%20Python%20library,when%20you%20learn%20Computer%20Networks.
 
 
 ## Project Member (L4BC)
@@ -20,3 +21,5 @@ that, we also use Hping3 tools to perform the DOS attack.
 ![](https://img.shields.io/badge/Tools-GitHub-informational?style=flat&logo=GitHub&color=181717)
 ![](https://img.shields.io/badge/Tools-Visual-Studio?style=flat&logo=VisualStudioCode&color=0044F9)
 ![](https://img.shields.io/badge/Code-Python-informational?style=flat&logo=Python&color=FBFF00)
+
+
